@@ -161,33 +161,3 @@ function genesis_luxe_collection() {
 	);
 }
 add_action( 'plugins_loaded', 'genesis_luxe_collection', 12 );
-
-function my_custom_section() {
-	// Ensure a proper version of Genesis Blocks is active before continuing.
-	if ( ! function_exists( 'genesis_blocks_register_layout_component' ) ) {
-		return;
-	}
-	genesis_blocks_register_layout_component(
-		[
-			'type'       => 'section',
-			'key'        => 'my_custom_notice_section',
-			'name'       => 'Custom Notice',
-			'content'    => "<!-- wp:genesis-blocks/gb-notice {\"noticeTitle\":\"Notice!\",\"noticeBackgroundColor\":\"#209cef\",\"noticeFontSize\":22} --><div style=\"color:#32373c;background-color:#209cef\" class=\"wp-block-genesis-blocks-gb-notice gb-font-size-22 gb-block-notice\" data-id=\"520f9b\"><div class=\"gb-notice-title\" style=\"color:#fff\"><p>Notice!</p></div><div class=\"gb-notice-text\" style=\"border-color:#209cef\"><p>You've been informed.</p></div></div><!-- /wp:genesis-blocks/gb-notice -->",
-			'category'   => [
-				'notice',
-				'another',
-			],
-			'keywords'   => [
-				'notice',
-				'attention',
-				'message',
-			],
-			'image'      => 'https://yoursite.com/screenshot-of-your-notice-section.jpg',
-			'collection' => [
-				'slug'  => 'test',
-				'label' => 'Test Collection',
-			],
-		]
-	);
-}
-add_action( 'plugins_loaded', 'my_custom_section', 12 );
