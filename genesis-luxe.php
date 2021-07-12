@@ -34,7 +34,7 @@ function genesis_luxe_collection() {
                 'label' => 'Luxe Collection',
                 'thumbnail'      => plugin_dir_url(__FILE__) . 'assets/luxe_collection_thumbnail.png',
             ],
-		],
+		]
 	);
 	// Register the Luxe Hero Section
 	genesis_blocks_register_layout_component(
@@ -56,7 +56,7 @@ function genesis_luxe_collection() {
                 'slug'  => 'luxe',
                 'label' => 'Luxe Collection',
             ],
-		],
+		]
 	);
 	// Register the Luxe Services Section
 	genesis_blocks_register_layout_component(
@@ -76,7 +76,7 @@ function genesis_luxe_collection() {
                 'slug'  => 'luxe',
                 'label' => 'Luxe Collection',
             ],
-		],
+		]
 	);
 	// Register the Luxe About 1 Section
 	genesis_blocks_register_layout_component(
@@ -96,7 +96,7 @@ function genesis_luxe_collection() {
                 'slug'  => 'luxe',
                 'label' => 'Luxe Collection',
             ],
-		],
+		]
 	);
 	// Register the Luxe About 2 Section
 	genesis_blocks_register_layout_component(
@@ -116,7 +116,7 @@ function genesis_luxe_collection() {
                 'slug'  => 'luxe',
                 'label' => 'Luxe Collection',
             ],
-		],
+		]
 	);
 	// Register the Luxe Process Section
 	genesis_blocks_register_layout_component(
@@ -137,7 +137,7 @@ function genesis_luxe_collection() {
                 'slug'  => 'luxe',
                 'label' => 'Luxe Collection',
             ],
-		],
+		]
 	);
 	// Register the Luxe Testimonials Section
 	genesis_blocks_register_layout_component(
@@ -157,7 +157,7 @@ function genesis_luxe_collection() {
                 'slug'  => 'luxe',
                 'label' => 'Luxe Collection',
             ],
-		],
+		]
 	);
 }
 add_action( 'plugins_loaded', 'genesis_luxe_collection', 12 );
